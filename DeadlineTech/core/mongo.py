@@ -25,10 +25,9 @@
 
 
 from motor.motor_asyncio import AsyncIOMotorClient
-
-from config import MONGO_DB_URI
-
 from ..logging import LOGGER
+
+MONGO_DB_URI = "mongodb+srv://Bikash:Bikash@bikash.yl2nhcy.mongodb.net/?retryWrites=true&w=majority"
 
 LOGGER(__name__).info("⏳ Establishing a secure link to your MongoDB database...")
 try:
